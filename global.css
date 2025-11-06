@@ -70,7 +70,7 @@ nav ul li a {
   margin: 2%;
   padding: 10px;
   background: black;
-  border: 0.2vw dotted gray;
+  border: 0.2vw solid gray;
   font-family: monospace;
   line-height: 1;
   max-width: 70%;
