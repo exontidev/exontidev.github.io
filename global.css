@@ -171,10 +171,13 @@ article {
     margin-bottom: 1rem;
   }
 
+  .post_text p {
+    margin-bottom: 1rem;
+  }
+
 
   .shy {
     color: gray;
-    margin: 1vw;
     font-size: 0.5rem;
   }
 
