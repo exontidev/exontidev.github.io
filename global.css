@@ -152,6 +152,7 @@ article {
   color: whitesmoke;
   margin-top: 1rem;
   font-weight: 500;
+  font-size: 1.5em;
 }
 
 @media (max-width: 800px) {
@@ -172,7 +173,8 @@ article {
   }
 
   .post_text p {
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
+    font-size: 2vw;
   }
 
 
