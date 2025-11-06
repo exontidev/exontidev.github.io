@@ -56,6 +56,7 @@ nav li:last-child {
 }
 
 nav ul li a {
+  font-style: italic;
   white-space: nowrap;
     display: block;
     color:whitesmoke;
@@ -65,7 +66,7 @@ nav ul li a {
 
 .logo {
   align-self: center;
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   margin: 2%;
   padding: 10px;
@@ -73,12 +74,11 @@ nav ul li a {
   border: 0.2vw solid gray;
   font-family: monospace;
   line-height: 1;
-  max-width: 70%;
   overflow: hidden;
   text-align: center;
   user-select: none;
 
-  animation: load 1s steps(30, end) forwards;
+  animation: load 2s steps(30, end);
 }
 
 /* ASCII art */
@@ -159,8 +159,9 @@ article img {
 }
 
 @keyframes load {
-    from { max-height: 0; }
-    to { max-height: 100vh; }
+    0% { max-height: 0; padding-top: 0; padding-bottom: 0; }
+    20% { padding-top: 10px; padding-bottom: 10px;}
+    100% { max-height: 100vh;}
 }
 
 @media (max-width: 800px) {
