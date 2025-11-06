@@ -90,7 +90,6 @@ nav ul li a {
   margin: 0;
   display: inline-block;
   overflow: hidden;
-  padding: 5px;
   font-size: clamp(0.3rem, 1vw, 0.8rem);
 
   transform: scaleX(calc(100vw / 1200)); /* optional fine tuning */
@@ -156,9 +155,9 @@ article {
 }
 
 @media (max-width: 800px) {
-    #wrapper {
-        width: 100%;
-    }
+  #wrapper {
+      width: 100%;
+  }
 
   article {
     margin: 3vw;
@@ -168,7 +167,8 @@ article {
 
   .post_text h2 {
     margin-top: 2rem;
-    font-size: 3em;
+    font-size: 2em;
+    margin-bottom: 1rem;
   }
 
 
@@ -176,5 +176,18 @@ article {
     color: gray;
     margin: 1vw;
     font-size: 0.5rem;
+  }
+
+  .logo pre {
+    font-size: 0.25rem;
+  }
+
+  nav ul li a {
+    white-space: nowrap;
+    display: block;
+    color:whitesmoke;
+    font-size: 0.5rem;
+    text-decoration: none;
+    padding: 5px;
   }
 }
