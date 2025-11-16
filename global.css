@@ -136,10 +136,24 @@ article {
   gap: 1rem;
 }
 
-article img {
+article .sub {
   width: 25%;
   height: auto;
   object-fit: cover; /* keep it cropped rather than squashed */
+}
+
+article .dom {
+  width: 60%;
+  height: auto;
+  object-fit: cover; /* keep it cropped rather than squashed */
+}
+
+article ul {
+  padding-left: 1rem;
+}
+
+article ul {
+  list-style: square;
 }
 
 img {
@@ -147,29 +161,34 @@ img {
   border: 0.2vw solid #222;
 }
 
-.post_content {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .post_text {
   padding: 1rem;
   border: 0.2vw solid #222;
 }
 
-.post_text p {
+.post_text p, .post_text li {
   margin-top: 0.5rem;
+  color: #ccc;
+}
+
+.post_text a {
+  color: slategray;
 }
 
 .post_text h2 {
   font-size: xx-large;
 }
 
-.shy {
-  font-size: small;
-  color: darkgray;
+.grayed {
+  color: #555;
   font-style: italic;
 }
+
+.shy {
+  font-style: italic;
+}
+
+
 
 
 @keyframes blink {
@@ -190,12 +209,18 @@ img {
   }
 
   .shy {
+    font-size: large;
     color: gray;
     font-size: 0.5rem;
   }
 
   .logo pre {
     font-size: 1.25vw;
+  }
+
+  .post_text {
+    flex: 1 1 100%;
+    max-width: none;
   }
 
   nav ul li a {
@@ -209,7 +234,7 @@ img {
 
   article {
     flex-direction: column;
-    align-items:baseline;
+    align-items:stretch;
     justify-content: space-around;
   }
 }
