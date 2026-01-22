@@ -16,11 +16,6 @@
     src: url('fonts/KiwiSoda.ttf') format('truetype');
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
 body {
     display: flex;
     justify-content: center;
@@ -57,7 +52,7 @@ img {
     aspect-ratio: 6 / 3;
     flex-wrap: wrap;
     box-sizing: border-box;
-    box-shadow: 8px 8px 0 0 #000000AA;
+    box-shadow: 8px 8px 0 0 #00000088;
 }
 
 .about .text_data {
